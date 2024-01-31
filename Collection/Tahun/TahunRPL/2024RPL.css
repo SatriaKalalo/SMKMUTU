@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    height: 1330vh;
+    background: url('IrF.gif');
+}
+
+
+.wrapper
+{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.brand
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.Nama1
+{
+    color: red;
+    font-size: 30px;
+}
+
+.Nama2
+{
+    color: white;
+    font-weight: 400;
+    padding-left: 4px;
+}
+
+.navigasi
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigasi > li
+{
+    list-style: none;
+    padding: 15px;
+}
+
+.navigasi > li > a
+{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navigasi > li > img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navigasi > li > img:hover
+{
+    width: 65px;
+    height: 65px;
+    border-radius: 65%;
+    transition: all .2s ease-in-out;
+}
+
+.navigasi > li > a:hover
+{
+    color: red;
+    transition: all .2s ease-in-out;
+
+}
+
+.active{
+    background-color: red;
+    color: white;
+    padding: 15px;
+}
+
+.active:hover{
+    color: white !important;
+}
+
+
+.Fcontainer{
+    margin-top: 30px;
+    height: 1305vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.card{
+        font-family: "Candara", sans-serif;
+        width: 340px;
+        overflow: hidden;
+        background: #0f0;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        display: flex;
+        margin: 10px;
+        flex-direction: column;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.profile-image img{
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-top: -75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    border: 10px solid white;
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+
+.profile-image img:hover{
+    transform: scale(1.1);
+}
+
+.card-content h3{
+    font-size: 25px;
+    text-align: center;
+    margin:0;
+}
+
+.card-content h4{
+    font-size: 25px;
+    text-align: center;
+}
+
+.card-content p{
+    font-size: 16px;
+    text-align: justify;
+    padding: 0 20px 5px 20px;
+}
+
+#© {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+}
