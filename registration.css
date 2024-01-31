@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    height: 215vh;
+    background: url('IrF.gif');
+}
+
+
+.wrapper
+{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.brand
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.Nama1
+{
+    color: red;
+    font-size: 30px;
+}
+
+.Nama2
+{
+    color: white;
+    font-weight: 400;
+    padding-left: 4px;
+}
+
+.navigasi
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigasi > li
+{
+    list-style: none;
+    padding: 15px;
+}
+
+.navigasi > li > a
+{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navigasi > li > img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navigasi > li > img:hover
+{
+    width: 65px;
+    height: 65px;
+    border-radius: 65%;
+    transition: all .2s ease-in-out;
+}
+
+.navigasi > li > a:hover
+{
+    color: red;
+    transition: all .2s ease-in-out;
+
+}
+
+.active{
+    background-color: red;
+    color: white;
+    padding: 15px;
+}
+
+.active:hover{
+    color: white !important;
+}
+
+.bodylagi{
+    font-size: 1.5em;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #ececec;
+    padding: 4px;
+}
+
+h1 {
+    color: rgb(226, 226, 226);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px;
+    text-shadow: 2px 2px 3px #000;
+    text-decoration: 10px solid #000;
+  }
+
+h2{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+}
+
+.semua-produk{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.pendaftaran{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 250px;
+	height: 400px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+}
+
+.pendaftaran .info-judul, .pendaftaran .info-harga{
+	font-size: 18px;
+}
+
+.pendaftaran:hover img{
+	scale:  1.1;
+}
+
+.pendaftaran:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.pendaftaran img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.pendaftaran a:link, .pendaftaran a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #2c3e50;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	font-size: 20px;
+	transition: all 0.2s;
+}
+
+.pendaftaran a:hover{
+	transform: scale(1.1);
+}
+
+#© {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+    height: 590vh;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .brand {
+        margin-bottom: 15px;
+    }
+
+    .navigasi {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navigasi > li {
+        padding: 10px;
+    }
+
+    .active {
+        padding: 10px;
+    }
+
+    .bodylagi {
+        padding: 20px;
+    }
+
+    .pendaftaran {
+        width: 80%;
+    }
+
+    h1 {
+        margin: 20px;
+    }
+}

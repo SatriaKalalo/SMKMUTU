@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*, html, body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    height: 365vh;
+    background: url('IrF.gif');
+}
+
+.wrapper
+{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.brand
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.Nama1
+{
+    color: red;
+    font-size: 30px;
+}
+
+.Nama2
+{
+    color: white;
+    font-weight: 400;
+    padding-left: 4px;
+}
+
+.navigasi
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigasi > li
+{
+    list-style: none;
+    padding: 15px;
+}
+
+.navigasi > li > a
+{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navigasi > li > img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navigasi > li > img:hover
+{
+    width: 65px;
+    height: 65px;
+    border-radius: 65%;
+    transition: all .2s ease-in-out;
+}
+
+.navigasi > li > a:hover
+{
+    color: red;
+    transition: all .2s ease-in-out;
+
+}
+
+.active{
+    background-color: red;
+    color: white;
+    padding: 15px;
+}
+
+.active:hover{
+    color: white !important;
+}
+
+.body2{
+    display: grid;
+    margin: 25px;
+    height: 5%;
+    place-items: center;
+}
+
+.wrapper1{
+    height: 100px;
+    width: 360px;
+    cursor: default;
+    background: linear-gradient(135deg, #14ffe9,#ffeb3b, #ff00e0);
+    border-radius: 10px;
+    animation: animate 1.5s linear infinite;
+}
+
+.wrapper1 .display1,
+.wrapper1 .span{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.wrapper1 .display1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index : 999;
+    background: #1b1b1b;
+    height: 85px;
+    width: 345px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.wrapper1 .display1 #time{
+    line-height: 85px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #14ffe9,#ffeb3b, #ff00e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes identifien{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+.wrapper1 .span{
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    border-radius: 10px;
+}
+
+.wrapper1 span:first-child{
+    filter: blur(10px);
+}
+
+.wrapper1 span:last-child{
+    filter: blur(20px);
+}
+
+.foto{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+figure{
+    position: relative;
+    left: 0;
+    width: 400%;
+    height: 100px;
+    animation: 10s slide infinite;
+}
+
+.slide
+{
+    position: relative;
+    width: 25%;
+    float:left;
+}
+
+.slide h1
+{
+    position :absolute;
+    font-size: 3em;
+    width: 100px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slide img
+{
+    width: 100%;
+    height: 500%;
+}
+
+@keyframes slide{
+    0%{
+        left:0;
+    }
+    10%{
+        left:0;
+    }
+    20%{
+        left:-100%;
+    }
+    30%{
+        left:-100%;
+    }
+    40%{
+        left:-200%;
+    }
+    50%{
+        left:-200%;
+    }
+    55%{
+        left:-300%;
+    }
+    65%{
+        left:-300%;
+    }
+    66%{
+        left:-200%;
+    }
+    74%{
+        left:-200%;
+    }
+    75%{
+        left:-100%;
+    }
+    85%{
+        left:-100%;
+    }
+    90%{
+        left:0%;
+    }
+    100%{
+        left:0%;
+    }
+}
+
+.biru {
+    --clr: #008;
+  }
+  
+  .hijaumuda {
+    --clr: #0f0;
+  }
+  
+  .merah {
+    --clr: red;
+  }
+  
+  .body1 {
+    font-family: "roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  h1 {
+    color: rgb(226, 226, 226);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px;
+    text-shadow: 2px 2px 3px #000;
+    text-decoration: 10px solid #000;
+  }
+  
+  .kotak {
+    background: var(--clr);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 940px;
+    height: 240px;
+    margin: 10px;
+    border-radius: 20px;
+    /* Corrected box-shadow syntax */
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+  }
+
+  .li1{
+    margin-left: 45px;
+  }
+  
+  /* Corrected selector for even .kotak elements */
+  .kotak:nth-of-type(even) {
+    transform: translateX(-400%);
+  }
+  
+  .kotak.show {
+    /* Specify the desired transformation */
+    transform: translateX(0);
+  }
+  
+  .kotak h2 {
+    font-size: 40px;
+    text-shadow: 2px 2px 3px #000;
+  }
+  
+  
+.Fcontainer{
+    margin-top: -80px;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.card{
+        font-family: "Candara", sans-serif;
+        width: 340px;
+        overflow: hidden;
+        background: #0f0;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.profile-image img{
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-top: -75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    border: 10px solid white;
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+
+.profile-image img:hover{
+    transform: scale(1.1);
+}
+
+.card-content h3{
+    font-size: 25px;
+    text-align: center;
+    margin:0;
+}
+
+.card-content h4{
+    font-size: 25px;
+    text-align: center;
+}
+
+.card-content p{
+    font-size: 16px;
+    text-align: justify;
+    padding: 0 20px 5px 20px;
+}
+
+.icons{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.icons a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 0 14px;
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+
+.icons a:hover{
+    color: black;
+    transform: scale(1.5);
+}
+
+.superbody{
+     background: transparent;
+     font-size: 14px;
+}
+
+.SuperContainer{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box{
+    background: #fff;
+    display: flex;
+}
+
+.contact-kiri
+{
+    flex-basis : 60%;
+    padding:40px 60px;
+}
+.contact-kanan
+{
+    flex-basis : 40%;
+    padding:40px 60px;
+    background-color: black;
+    color: #fff;
+}
+h1{
+    margin-bottom: 10px;
+}
+
+.SuperContainer p{
+    margin-bottom: 40px;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1 solid #ccc;
+    outline: none;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+textarea{
+    width: 100%;
+    border-bottom: 1 solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+
+button{
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius:30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 5px rgba(28,0,101,0.3);
+}
+
+.contact-kiri h3
+{
+    color: #1c00b5;
+    font-size : 600;
+    margin-bottom:30px;
+}
+
+.contact-kanan h3
+{
+    color: #1c00b5;
+    font-size : 600;
+    margin-bottom:30px;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-right: 20px;
+}
+
+#© {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navigasi {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .navigasi > li {
+        padding: 10px;
+    }
+
+    .navigasi > li > img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .foto {
+        height: 250px;
+    }
+
+    figure {
+        width: 400%;
+    }
+
+    .body1 {
+        margin: 0;
+    }
+
+    .kotak {
+        width: 100%;
+        height: 290px;
+    }
+
+    .kotak h2,
+    .kotak li {
+        margin-left: 10px;
+    }
+
+    .Fcontainer {
+        margin-top: -20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .profile-image img {
+        width: 80px;
+        height: 80px;
+        margin-top: -40px;
+    }
+
+    .contact-kiri,
+    .contact-kanan {
+        flex-basis: 100%;
+    }
+}
